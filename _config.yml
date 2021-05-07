@@ -7,20 +7,64 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+locale           : "ko-KR"
+title            : "GH Blog"  # 타이틀
+subtitle         : "ver 0.1"  # 타이틀 아래 작은 글씨
+logo             : # 타이틀 옆에 작게 들어갈 이미지
+masthead_title   : "김건호 BLOG" # 홈페이지 최 상단에 들어갈 타이틀
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+name             : "김건호"    # 맨 하단 이름 찍히는 영역
+description      : "Deep Learning / Machine Learning / Flask / API / Ubuntu / Python / 통계 / 수학"
 
-paginate:         5
+url              : "https://greathistory.github.io"
+baseurl          : "/blog" 
+repository       : "greathistory/greathistory.github.com"
+teaser           : # "/assets/images/senior-couple-4723737_640.jpg" # 홈페이지 기본 티저 이미지
+breadcrumbs      : true # 브래드크럼 사용 여부
+
+
+
+
+
+
+# 댓글 관련 부분
+comments:
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 7271kim # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment by {fields.name}"
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+
+
+
+
+
 
 # Custom vars
 version:          2.1.0
-
 github:
-  repo:           https://github.com/poole/hyde
