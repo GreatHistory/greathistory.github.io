@@ -68,3 +68,5 @@ staticman:
 # Custom vars
 version:          2.1.0
 github:
+
+theme: jekyll-theme-minimal
